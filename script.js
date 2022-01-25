@@ -59,7 +59,6 @@ console.log(quotes)
 function getRandomQuote() {
     const randomNum = Math.floor(Math.random() * quotes.length);
     return quotes[randomNum];
-
 };
 
 /***
@@ -87,13 +86,12 @@ function printQuote() {
 
     //this inserts the string into the HTML and prints it on the page
     document.getElementById('quote-box').innerHTML = PtoHTML1;
-
 };
 
 /***
  * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
+ * The code will look like the following. You need to complete it.
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
+document.getElementById('load-quote').addEventListener("click", printQuote);
 
